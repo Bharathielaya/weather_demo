@@ -5,6 +5,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .container {
@@ -71,3 +72,81 @@ button {
 .hourly-item img {
   width: 40px;
 }
+/* style.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('https://i.pinimg.com/1200x/6e/e5/d0/6ee5d0fecf905e5fe8e380b7f1357551.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
+}
+
+/* Optional: darken background using overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* black overlay with 50% opacity */
+  z-index: -1;
+}
+
+.container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1); /* semi-transparent box */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+input, button {
+  padding: 10px;
+  margin: 10px 0;
+  width: 90%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input {
+  background: #ffffffcc;
+  color: #000;
+}
+
+button {
+  background-color: #2196f3;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0b7dda;
+}
+
+#temp-div,
+#weather-info,
+#hourly-forecast {
+  margin-top: 20px;
+}
+
+button {
+  width: 200px;
+  height: 40px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #2196f3;
+  color: white;
+  cursor: pointer;
+}
+
